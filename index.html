@@ -12,6 +12,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
         <link rel="manifest" href="./img/favicon/site.webmanifest">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="./css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
         <title>Anthony Njoku</title>
@@ -38,7 +39,7 @@
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#work">Work</a>
+                                <a class="nav-link" href="#work">Works</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact</a>
@@ -54,7 +55,19 @@
 <!-- Centered content -->
 <div class="header__content">
     <div class="header__img-box">
-        <img src="./img/developer.jpg" alt="Anthony Njoku" class="header__img">
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jtbfg2nb.json"  
+                       background="transparent"  
+                       speed="1"  
+                       style="width: 200px; height: 200px;"  
+                       loop  
+                       autoplay>
+        </lottie-player>
+    </div>
+</div>
+
+<!-- Lottie Animation Script (Paste this before </body>) -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     </div>
     <h1 class="heading-primary">
         <span class="heading-primary--main">Anthony Njoku</span>
@@ -70,21 +83,14 @@
 
             <!-- Absolute positioned social icons -->
             <div class="header__social-icons social-icons">
-                <a href="#" class="social-icons__link">
-                    <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
+                
                 </a>
                 <a href="#" class="social-icons__link">
                     <svg class="icon social-icons__icon">
                         <use xlink:href="./img/SVG/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                 </a>
-                <a href="#" class="social-icons__link">
-                    <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                </a>
+                
                 <a href="#" class="social-icons__link">
                     <svg class="icon social-icons__icon">
                         <use xlink:href="./img/SVG/symbol-defs.svg#icon-whatsapp"></use>
@@ -92,19 +98,17 @@
                 </a>
                 <a href="#" class="social-icons__link">
                     <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-discord"></use>
+                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-github"></use>
                     </svg>
                 </a>
-                <a href="#" class="social-icons__link">
+                <a href="https://www.linkedin.com/in/your-profile" class="social-icons__link" target="_blank">
                     <svg class="icon social-icons__icon">
                         <use xlink:href="./img/SVG/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                 </a>
-                <a href="#" class="social-icons__link">
-                    <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-medium"></use>
-                    </svg>
-                </a>
+                
+
+                    
 
             </div>
 
@@ -180,7 +184,7 @@
                         </svg>
                         Resume
                     </a>
-                    <a href="#" class="btn btn--full">Contact</a>
+                    <a href="https://wa.me/+23408105066210" class="btn btn--full" target="_blank">Contact</a>
                 </div>
             </div>
         </section>
@@ -223,13 +227,12 @@
                                     </div>
 
                                     <div class="project__content-box">
-                                        <h3 class="heading-tertiary">Lmet consectetur adipisicing elit.</h3>
-                                        <p class="project__details"> Architecto enim sunt amet doloremque ratione
-                                            tenetur
-                                            cum cupiditate? Iure corrupti, expedita sed laboriosam qui ipsum ex
-                                            minus
-                                            aspernatur
-                                            quaerat porro amet!</p>
+                                        <h3 class="heading-tertiary">VTU Platform for Mobile Recharge & Bill Payments</h3>
+                                        <p class="project__details"><i>I developed a fully functional VTU (Virtual Top-Up) website that allows users to 
+                                            recharge airtime, buy data, pay utility bills, and perform other telecom-related services. The platform 
+                                            features seamless API integration, secure payment processing, and an intuitive user interface for a 
+                                            smooth experience.</i></p>
+                                            
                                         <div class="project__cta-box text-center">
                                             <a href="#" class="btn btn--ghost">
                                                 <svg class="icon btn__icon-left icon-earth">
@@ -438,34 +441,85 @@
         </section>
         <section class="contact" id="contact">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center text-center">
                     <div class="col-md-10 col-lg-8">
-                        <h2 class="heading-secondary">Contact Me</h2>
-                        <form id="contact-form" action="send_mail.php" method="POST">
-                            <div class="form-group">
-                                <label for="Username">Full Name</label>
-                                <input type="text" class="form-control" id="Username" name="Username" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="Email">Email</label>
-                                <input type="email" class="form-control" id="Email" name="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="mt-2 btn btn--full float-right">
-                                Send 
-                                <svg class="icon btn__icon-right">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-paper-plane"></use>
-                                </svg>
-                            </button>
-                        </form>
+                        <h2 class="heading-secondary">Get in Touch with Tony</h2>
+                        <p class="contact-text">Let's work together! Contact me via WhatsApp, call, or email.</p>
+                        
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/1234567890?text=Hello,%20I%20want%20to%20work%20with%20you!" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            
+                            <a href="mailto:your.email@example.com" class="btn btn-email">
+                                <i class="fas fa-envelope"></i> Email Me
+                            </a>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/yourprofile" class="social-icons__link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/yourprofile" class="social-icons__link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/yourprofile" class="social-icons__link" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        >
+        
+        <style>
+            .contact {
+                padding: 50px 20px;
+                background: #f8f9fa;
+                text-align: center;
+            }
+            .contact-text {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                color: #555;
+            }
+            .contact {
+                padding-top: 50px; /* Adds space inside the section */
+                  margin-top: 50px;  /* Adds space outside the section */
+}
+
+            .contact-buttons a {
+                display: inline-block;
+                margin: 10px;
+                padding: 12px 20px;
+                border-radius: 5px;
+                font-size: 1rem;
+                color: #fff;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            .btn-whatsapp { background: #25d366; }
+            .btn-call { background: #007bff; }
+            .btn-email { background: #ff6b6b; }
+            .contact-buttons a:hover { opacity: 0.8; }
+            
+            .social-icons {
+                margin-top: 20px;
+            }
+            .social-icons__link {
+                display: inline-block;
+                font-size: 1.5rem;
+                color: #333;
+                margin: 0 10px;
+                transition: 0.3s;
+            }
+            .social-icons__link:hover {
+                color: #007bff;
+            }
+        </style>
+        
+        <!-- FontAwesome Icons -->
+        <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+        
         
                         <!-- Message Area -->
                         <div id="form-message"></div>
@@ -747,67 +801,30 @@
         </section> -->
 
 
+
         <footer class="footer">
             <div class="container">
-                <div class="row justify-content-center ">
-                    <div class="col-12  py-5 text-center mb-2">
-                        <h3 class="mb-4 heading-tertiary footer__social-heading">Stay connected</h3>
-                        <!-- Absolute positioned social icons -->
-                        <div class=" social-icons social-icons--lg">
-                            <a href="#" class="social-icons__link">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icons__link">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icons__link">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icons__link">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-whatsapp"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icons__link">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-discord"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icons__link">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icons__link">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-medium"></use>
-                                </svg>
-                            </a>
-
+                <div class="row justify-content-center">
+                    <div class="col-12 py-5 text-center">
+                        <h3 class="footer__title">Stay Connected</h3>
+                        <div class="social-icons">
+                            
+                            <a href="#" class="social-icons__link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icons__link"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icons__link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/your-profile" class="social-icons__link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-12 text-center">
-                        <p class="footer__credits font-1rem">
-                            <a href="https://github.com/Starislauz" target="_blank">Check out my GitHub</a>, 
-                            crafted with ❤️ by <a href="https://github.com/Starislauz" target="_blank">Anthony Njoku</a>.
+                        <p class="footer__credits">
+                            Made with ❤️ by <a href="https://github.com/Starislauz" target="_blank">Anthony Njoku</a>.
                         </p>
                     </div>
-                    <div class="col-12 mt-auto">
-                        <nav class="nav footer__nav justify-content-around">
-                            <a class="nav-link active" href="#">Home</a>
-                            <a class="nav-link" href="#">Projects</a>
-                            <a class="nav-link" href="#">Blog</a>
-                            <a class="nav-link" href="#">Contact</a>
-                        </nav>
-                    </div>
                     
+                </div>
+            </div>
         </footer>
+        
 
 
 
