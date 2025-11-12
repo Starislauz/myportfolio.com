@@ -15,11 +15,16 @@
         <link rel="manifest" href="./img/favicon/site.webmanifest">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="./css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/custom-enhancements.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title>Anthony Njoku</title>
     </head>
 
     <body>
+        <!-- Loading Overlay -->
+        <div class="loading-overlay">
+            <div class="loader"></div>
+        </div>
 
         <header class="header" id="header">
             <!-- Top fixed navbar -->
@@ -46,20 +51,20 @@
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Anthony_Njoku_CV OD (1).pdf">Resume</a>
+                                <a class="nav-link" href="Anthony Njoku.pdf">Resume</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-<!-- Centered content -->
+<!-- Centered content with modern animations -->
 <div class="header__content">
-    <div class="header__img-box">
+    <div class="header__img-box animate-fadeInUp">
         <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jtbfg2nb.json"  
                        background="transparent"  
                        speed="1"  
-                       style="width: 200px; height: 200px;"  
+                       style="width: 220px; height: 220px;"  
                        loop  
                        autoplay>
         </lottie-player>
@@ -70,13 +75,20 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     </div>
-    <h1 class="heading-primary">
+    <h1 class="heading-primary animate-fadeInUp" style="animation-delay: 0.2s;">
         <span class="heading-primary--main">Anthony Njoku</span>
-        <span class="heading-primary--sub">I build secure and scalable backends — powered by Machine Learning, AI, and Data Science.</span>
+        <span class="heading-primary--title" style="color: #64ffda; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; display: block; margin-top: 0.8rem;">AI & MLOps Engineer | Backend Developer</span>
+        <span class="heading-primary--sub" style="font-size: 1.1rem; line-height: 1.5; max-width: 900px; margin: 1rem auto; display: block; padding: 0 1rem;">I design and deploy intelligent, scalable systems — powered by <strong>Machine Learning</strong>, <strong>Artificial Intelligence</strong>, and <strong>cloud-native backend engineering</strong>.</span>
     </h1>
-    <div class="header__cta-box">
-        <a href="#about" class="btn btn--full">Discover My Story</a>
-        <a href="#work" class="btn btn--ghost">Explore My Work</a>
+    <div class="header__cta-box animate-fadeInUp" style="animation-delay: 0.4s; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+        <a href="#about" class="btn btn--full btn-modern" style="width: 100%; max-width: 280px;">
+            <span>Discover My Story</span>
+            <i class="fas fa-arrow-right btn-icon"></i>
+        </a>
+        <a href="#work" class="btn btn--ghost btn-modern" style="color: white; width: 100%; max-width: 280px;">
+            <span>Explore My Work</span>
+            <i class="fas fa-briefcase btn-icon"></i>
+        </a>
     </div>
     
 
@@ -113,63 +125,105 @@
 
         <section class="about" id="about">
             <div class="container">
-                <h2 class="heading-secondary">About me</h2>
+                <h2 class="heading-secondary animate-on-scroll">About me</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-8">
-                        <div class="about__content">
-                           <p>I'm Anthony Njoku, a backend developer with expertise in machine learning, AI, and data science — passionate about building intelligent, scalable systems that solve real-world problems.</p>
+                        <div class="about__content animate-on-scroll">
+                           <p>I'm Anthony Njoku, an <strong>AI, MLOps, and Backend Engineer</strong> passionate about building intelligent, scalable systems that solve real-world problems.</p>
 
-                           <p>I specialize in <strong>PHP & Laravel</strong>, <strong>Python (FastAPI, Flask, Django)</strong>, and <strong>JavaScript (Node.js & Express.js)</strong>, creating high-performance APIs and backend architectures for modern web and AI applications.</p>
+                           <p>I specialize in <strong>AI and MLOps pipelines</strong>, integrating machine learning models, automation, and scalable deployment systems into production-ready applications. I also work with <strong>Python (FastAPI, Flask)</strong>, <strong>PHP & Laravel</strong>, and <strong>JavaScript (Node.js, Express.js)</strong> — developing high-performance APIs and backend architectures that power modern web and AI-driven platforms.</p>
 
-                           <p>With a strong foundation in <strong>API design, database management, and system architecture</strong>, I deliver secure, optimized, and maintainable solutions. My machine learning and AI work includes predictive modeling, real-time integration, and scalable ML API deployment.</p>
+                           <p>With a strong foundation in <strong>API design, database management, and cloud infrastructure</strong>, I deliver secure, optimized, and maintainable solutions. My AI work includes <strong>predictive modeling, real-time analytics, and automated ML pipelines</strong> for seamless deployment, scaling, and monitoring.</p>
 
-                            <p>Driven by curiosity and innovation, I’m always exploring new tools and pushing boundaries in automation and intelligent systems. Let’s build something amazing together!</p>
+                            
+                            <p>Driven by curiosity and innovation, I constantly explore cutting-edge tools in <strong>machine learning, DevOps, and intelligent automation</strong> — transforming data and code into systems that think, learn, and scale.</p>
+
+                            <p>💡 <strong>Let's build the future of intelligent automation together.</strong></p>
+
 
                             
                         </div>
-                        <div class="about__skills my-4">
-                            <h3 class="heading-tertiary">Technologies I know:</h3>
-                            <div class="about__skills-icons mt-2">
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-html5"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-css3"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-javascript"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-php"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-laravel"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-angular"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-jquery"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-mysql"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-bootstrap"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-python"></use>
-                                </svg>
-                                
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-git"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-linux"></use>
-                                </svg>
-
+                        <div class="about__skills my-4 animate-on-scroll">
+                            <h3 class="heading-tertiary">Tech Stack & Tools</h3>
+                            
+                            <div class="skills-category mb-4">
+                                <h4 style="color: #64ffda; font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">AI & Machine Learning</h4>
+                                <div class="tech-badges">
+                                    <span class="badge badge-tech">TensorFlow</span>
+                                    <span class="badge badge-tech">PyTorch</span>
+                                    <span class="badge badge-tech">scikit-learn</span>
+                                    <span class="badge badge-tech">Pandas</span>
+                                    <span class="badge badge-tech">NumPy</span>
+                                    <span class="badge badge-tech">Jupyter</span>
+                                </div>
                             </div>
+
+                            <div class="skills-category mb-4">
+                                <h4 style="color: #64ffda; font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">MLOps & DevOps</h4>
+                                <div class="tech-badges">
+                                    <span class="badge badge-tech">Docker</span>
+                                    <span class="badge badge-tech">Kubernetes</span>
+                                    <span class="badge badge-tech">MLflow</span>
+                                    <span class="badge badge-tech">CI/CD</span>
+                                    <span class="badge badge-tech">Git</span>
+                                    <span class="badge badge-tech">Linux</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-category mb-4">
+                                <h4 style="color: #64ffda; font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">🔧 Backend & Databases</h4>
+                                <div class="tech-badges">
+                                    <span class="badge badge-tech">Python</span>
+                                    <span class="badge badge-tech">FastAPI</span>
+                                    <span class="badge badge-tech">Flask</span>
+                                    <span class="badge badge-tech">Django</span>
+                                    <span class="badge badge-tech">PHP</span>
+                                    <span class="badge badge-tech">Laravel</span>
+                                    <span class="badge badge-tech">Node.js</span>
+                                    <span class="badge badge-tech">Express.js</span>
+                                    <span class="badge badge-tech">MySQL</span>
+                                    <span class="badge badge-tech">PostgreSQL</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-category">
+                                <h4 style="color: #64ffda; font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">🎨 Frontend & Tools</h4>
+                                <div class="tech-badges">
+                                    <span class="badge badge-tech">HTML5</span>
+                                    <span class="badge badge-tech">CSS3</span>
+                                    <span class="badge badge-tech">JavaScript</span>
+                                    <span class="badge badge-tech">Bootstrap</span>
+                                    <span class="badge badge-tech">jQuery</span>
+                                </div>
+                            </div>
+
+                            <style>
+                                .tech-badges {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 0.6rem;
+                                }
+                                .badge-tech {
+                                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                    color: white;
+                                    padding: 0.5rem 1rem;
+                                    border-radius: 20px;
+                                    font-size: 0.85rem;
+                                    font-weight: 500;
+                                    transition: all 0.3s ease;
+                                    cursor: default;
+                                    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+                                }
+                                .badge-tech:hover {
+                                    transform: translateY(-3px);
+                                    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.5);
+                                    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+                                }
+                                .skills-category h4 {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            </style>
                         </div>
                     </div>
                 </div>
@@ -178,7 +232,7 @@
 
 
                 <div class="about__cta-box text-center">
-                    <a href="Anthony_Njoku_CV OD (1).pdf" class="btn btn--ghost">
+                    <a href="Anthony Njoku.pdf" class="btn btn--ghost">
                         <svg class="icon btn__icon-left">
                             <use xlink:href="./img/SVG/symbol-defs.svg#icon-file-pdf"></use>
                         </svg>
@@ -204,6 +258,15 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                             aria-haspopup="true" aria-expanded="false">Technology</a>
                         <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">TensorFlow</a>
+                            <a class="dropdown-item" href="#">PyTorch</a>
+                            <a class="dropdown-item" href="#">Scikit-learn</a>
+                            <a class="dropdown-item" href="#">MLflow</a>
+                            <a class="dropdown-item" href="#">Docker</a>
+                            <a class="dropdown-item" href="#">Kubernetes</a>
+                            <a class="dropdown-item" href="#">CI/CD</a>
+                            <a class="dropdown-item" href="#">AWS</a>
+                            <a class="dropdown-item" href="#">Azure</a>
                             <a class="dropdown-item" href="#">HTML</a>
                             <a class="dropdown-item" href="#">CSS</a>
                             <a class="dropdown-item" href="#">PHP</a>
@@ -220,26 +283,27 @@
                     <div class="work__content work__content--projects tab-pane fade show active" id="projects"
                         role="tabpanel" aria-labelledby="projects-tab">
                         <div class="row justify-content-center">
+
+
+
+
+                            
                             <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
                                 <div class="project">
                                     <div class="project__img-box">
-                                        <img src="img/vtu.project.jpg" alt="Project 1" class="project__img img-fluid">
+                                        <img src="img/WhatsApp Image 2025-11-09 at 11.02.27_3d4c58af.jpg" alt="Project 1" class="project__img img-fluid">
                                     </div>
-
                                     <div class="project__content-box">
-                                        <h3 class="heading-tertiary"><strong>Vtu platform for mobile recharge & bill payments</strong></h3>
-                                        <p class="project__details"><i>I developed a fully functional VTU (Virtual Top-Up) website that allows users to 
-                                            recharge airtime, buy data, pay utility bills, and perform other telecom-related services. The platform 
-                                            features seamless API integration, secure payment processing, and an intuitive user interface for a 
-                                            smooth experience.</i></p>
-                                            
+                                        <h3 class="heading-tertiary"><strong>AI RAG Document Chat (MLOps) API with Gemini & FastAPI (customized)</strong></h3>
+                                        <p class="project__details"><i>I engineered a production-ready RAG (Retrieval-Augmented Generation) API using FastAPI, featuring multi-file upload and image OCR. Crucially, I **containerized the entire application using Docker** and managed its deployment to a live **AWS EC2 instance**, demonstrating full MLOps capability from development to production scale.</i></p>
+
                                         <div class="project__cta-box text-center">
-                                            <a href="#work" class="btn btn--ghost">
+                                            <a href="https://github.com/Starislauz/doc-chat-ML-AI-Mlops" class="btn btn--ghost">
                                                 <svg class="icon btn__icon-left icon-earth">
                                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-earth"></use>
                                                 </svg>
-                                                Demo<span>
-                                            <a href="https://github.com/Starislauz/VTU/tree/main/VTU" class="btn btn--full" target="_blank">
+                                                Live<span>
+                                            <a href="https://github.com/Starislauz/doc-chat-ML-AI-Mlops" class="btn btn--full" target="_blank">
                                                 <svg class="icon btn__icon-left icon-earth">
                                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
                                                 </svg>
@@ -277,6 +341,8 @@
 
                                 </div>
                             </div>
+
+                            
                             <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
                                 <div class="project">
                                     <div class="project__img-box">
@@ -459,19 +525,21 @@
                             <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
                                 <div class="project">
                                     <div class="project__img-box">
-                                        <img src="img/comingsoon.project.jpg" alt="Project 3" class="project__img img-fluid">
+                                        <img src="img/vtu.project.jpg" alt="Project 3" class="project__img img-fluid">
                                     </div>
                                     <div class="project__content-box">
-                                        <h3 class="heading-tertiary"><strong>Exciting Project Coming Soon!</strong></h3>
-                                        <p class="project__details">We're working on something amazing! Stay tuned as we bring this project to life.  
-                                            More details will be revealed soon. Keep an eye out!</p>
+                                        <h3 class="heading-tertiary"><strong>Vtu platform for mobile recharge & bill payments</strong></h3>
+                                        <p class="project__details">I developed a fully functional VTU (Virtual Top-Up) website that allows users to 
+                                            recharge airtime, buy data, pay utility bills, and perform other telecom-related services. The platform 
+                                            features seamless API integration, secure payment processing, and an intuitive user interface for a 
+                                            smooth experience.</p>
                                         <div class="project__cta-box text-center">
                                             <a href="#" class="btn btn--ghost">
                                                 <svg class="icon btn__icon-left icon-earth">
                                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-earth"></use>
                                                 </svg>
                                                 Demo</a>
-                                            <a href="https://github.com/Starislauz/wifi/tree/main/wifi" class="btn btn--full">
+                                            <a href="https://github.com/Starislauz/VTU/tree/main/VTU" class="btn btn--full">
                                                 <svg class="icon btn__icon-left icon-earth">
                                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
                                                 </svg>
@@ -576,8 +644,8 @@
                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-embed"></use>
                                 </svg>
                             </div>
-                            <span class="counter__count">678000</span>
-                            <p class="counter__title">Lines of code</p>
+                            <span class="counter__count">8</span>
+                            <p class="counter__title">Technologies Mastered</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-3">
@@ -588,7 +656,7 @@
                                 </svg>
                             </div>
                             <span class="counter__count">10</span>
-                            <p class="counter__title">Projects done</p>
+                            <p class="counter__title">Projects Completed</p>
                         </div>
                     
                     </div>
@@ -599,8 +667,8 @@
                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-sun"></use>
                                 </svg>
                             </div>
-                            <span class="counter__count">2</span>
-                            <p class="counter__title">Years of experience</p>
+                            <span class="counter__count">3</span>
+                            <p class="counter__title">Years of Experience</p>
                         </div>
                     </div>
                 </div>
