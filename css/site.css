@@ -825,6 +825,23 @@ section[id] {
     filter: saturate(1) contrast(1.05);
 }
 
+/* Wide application screenshots: show the whole UI rather than cropping the
+   chrome off both edges. The letterbox uses the screenshot's own near-black so
+   the bars blend into the app backdrop instead of framing it. */
+.project__media--contain {
+    background: #0b0d12;
+}
+
+.project__media--contain img {
+    object-fit: contain;
+    filter: none;
+}
+
+.project:hover .project__media--contain img {
+    transform: none;
+    filter: none;
+}
+
 .project__body {
     display: flex;
     flex-direction: column;

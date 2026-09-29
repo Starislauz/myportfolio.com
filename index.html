@@ -116,7 +116,8 @@
                     <li><a class="nav__link" href="#work">Projects</a></li>
                     <li><a class="nav__link" href="#contact">Contact</a></li>
                     <li>
-                        <a class="btn btn--outline btn--sm nav__resume" href="Anthony%20Njoku.pdf" download>
+                        <a class="btn btn--outline btn--sm nav__resume"
+                            href="Anthony_Chukwuemeka_Njoku_CV_updated.pdf" download>
                             <svg class="icon" aria-hidden="true">
                                 <use href="#i-download"></use>
                             </svg>
@@ -157,7 +158,7 @@
                                 <use href="#i-arrow-right"></use>
                             </svg>
                         </a>
-                        <a class="btn btn--outline" href="Anthony%20Njoku.pdf" download>
+                        <a class="btn btn--outline" href="Anthony_Chukwuemeka_Njoku_CV_updated.pdf" download>
                             <svg class="icon" aria-hidden="true">
                                 <use href="#i-download"></use>
                             </svg>
@@ -326,9 +327,10 @@
                 <div class="projects" id="projects">
 
                     <article class="project" data-tags="ai mlops">
-                        <div class="project__media">
-                            <img src="./img/WhatsApp%20Image%202025-11-09%20at%2011.02.27_3d4c58af.jpg"
-                                alt="RAG document chat API interface" loading="lazy" decoding="async">
+                        <div class="project__media project__media--contain">
+                            <img src="./img/Rag%20image.jpg"
+                                alt="Doc-Chat interface: a document sidebar with uploaded files and the AI assistant chat panel"
+                                loading="lazy" decoding="async">
                         </div>
                         <div class="project__body">
                             <div class="project__meta">
@@ -338,9 +340,12 @@
                             </div>
                             <h3 class="project__title">RAG document chat API</h3>
                             <p class="project__text">
-                                A production RAG pipeline over Gemini and FastAPI, with multi-file upload and image
-                                OCR. Containerised with Docker and deployed to a live AWS EC2 instance — the complete
-                                path from development to production.
+                                A production RAG service over your own documents. Hybrid retrieval (vector + BM25)
+                                with cross-encoder re-ranking, and a strict abstention path: if the answer isn't in
+                                the uploads it says so instead of guessing. Deployed on infrastructure I run myself —
+                                Docker Compose behind Nginx on Oracle Cloud, with Cloudflare handling DNS, CDN and TLS
+                                for the custom domain. A 30-question golden set scores correctness, faithfulness and
+                                abstain accuracy on every change.
                             </p>
                             <div class="project__links">
                                 <a class="link link--live" href="https://njoku-ai.systems/" target="_blank"
@@ -375,9 +380,11 @@
                             </div>
                             <h3 class="project__title">Telegram market analyst bot</h3>
                             <p class="project__text">
-                                A live crypto analyst for SOL, BTC, ETH and BNB, driven entirely by inline buttons —
-                                support, resistance and VWAP levels, charts, the day's written outlook, and a logged
-                                signal when there is one, every one of them tracked with its outcome and hit rate.
+                                A Rust service backing a Telegram bot: an AI analyst for SOL, BTC, ETH and BNB that
+                                reads Bybit perpetuals across three timeframes — funding, open interest, order-book
+                                depth, VWAP, EMA200 and clustered support and resistance with touch counts. Signals
+                                must pass hard risk rules or they are discarded, and every one is tracked to target or
+                                stop with the hit rate published. It never places an order.
                             </p>
                             <div class="project__links">
                                 <a class="link link--live" href="https://t.me/bottonybetbot" target="_blank"
@@ -387,8 +394,8 @@
                                     </svg>
                                     Open in Telegram
                                 </a>
-                                <a class="link" href="https://github.com/Starislauz/telegram-bot" target="_blank"
-                                    rel="noopener noreferrer">
+                                <a class="link" href="https://github.com/Starislauz/Smart-AI-telegram-bot"
+                                    target="_blank" rel="noopener noreferrer">
                                     <svg class="icon" aria-hidden="true">
                                         <use href="#i-github"></use>
                                     </svg>
